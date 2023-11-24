@@ -1,0 +1,11 @@
+/* 24.11.2023 Jakub Warkusz */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: teal;
+    font-size: 86px;
+}

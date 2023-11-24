@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h2>Zewnętrzy arkusz stylu</h2>
+    <ol>
+        <li><h1>Składnia teoretyczna:</h1>
+            <textarea disabled="disabled" readonly="readonly" style="width:480px;height:100px;">
+<head>
+    (...)
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    (...)
+</head>
+            </textarea>
+        </li>
+        <li><h1>Gdzie wstawiany jest styl zewnętrzny</h1>
+            <p>wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy znacznikami &lt;head&gt; a &lt;/head&gt;), przedstawioną powyżej linijkę:</p>
+            <textarea disabled="disabled" readonly="readonly" style="width:450px;height:30px;">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+            </textarea>
+        </li>
+        <li><h1>Najprostszy sposób na wstawienie arkusza stylu</h1>
+            <textarea disabled="disabled" readonly="readonly" style="width:450px;height:30px;">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+            </textarea>
+        </li>
+        <li><h1>Ile arkuszy styli może być dołączonych do jednego dokumentu HTML</h1>
+        <p>Można dołączyć <u><b>dowolną liczbę</b></u> zewnętrznych arkuszy stylów
+            - każdy jako osobny element <b>&lt;link rel="Stylesheet" /&gt;</b>. </p></li>
+        <li><h1>Co się dzieje w przypadku konfliktu</h1>
+            <p>W przypadku <b><u>konfliktów</u></b>, ważniejsze będą deklaracje z arkusza dołączonego później.</p>
+        </li>
+    </ol>
+</body>
+</html>
