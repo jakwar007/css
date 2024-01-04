@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>Sposoby podłączania styli do strony (skrócone zestawienie).</h2>
+    <ol>
+        <li><b><u>Zewnętrzny</u></b> arkusz stylów.
+        <textarea readonly disabled style="width:500px;height:60px;">
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+        </textarea>
+        </li>
+        <li>Styl <b><u>lokalny</u></b> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony
+        <textarea readonly disabled style="width:550px;height:30px;">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+        </textarea>
+        </li>
+        <li>
+            <b><u>Wewnętrzny</u></b> arkusz stylów.
+            <textarea readonly disabled style="width:450px;height:110px;">
+<head>
+    <style type="text/css">
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+    </style>
+</head>
+            </textarea>
+        </li>
+        <li>
+            <b><u>Alternatywny</u></b> arkusz stylów.
+            <textarea readonly disabled style="width:700px;height:95px;">
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+    <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+    <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+            </textarea>
+        </li>
+        <li>
+            <b><u>Importowanie</u></b> arkusza stylu.<br>
+            <textarea readonly disabled style="width:400px;height:70px;">
+<style type="text/css">
+    @import url(adres zewnętrznego arkusza stylów);
+</style>
+            </textarea>
+        </li>
+    </ol>
+</body>
+</html>

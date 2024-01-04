@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p {
+            font-family: Arial;
+        }
+        li {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h2>Rodzaje selektorów</h2>
+    <ol>
+        <li><h3>Selektor prosty</h3>
+        <p>
+            Selektorem <u>prostym</u> jest znaczniki języka XHTML/HTML <b>(np. p, h3, table, img)</b> przypisany
+do elementu, który chcesz w danym momencie formatować.
+Styl zdefiniowany dla przykładowego selektora p będzie odnosił się wyłącznie do
+akapitów zamkniętych w znacznikach &lt;p&gt;&lt;/p&gt; i nie będzie wpływał na pozostałe elementy
+strony WWW.
+        </p></li>
+        <li><h3>Selektor uniwersalny</h3>
+        <p>
+            Cecha (ang. property) oraz wartość (ang. value) określają atrybuty elementu.
+Selektor taki pozwala ustalić określone atrybuty dla wszystkich elementów strony, a więc dla
+różnych selektorów typu. Możemy za pomocą tej komendy nadać to samo formatowanie dla
+wszystkich elementów na całej stronie, niezależnie od ich typu (p, h1, li itd.).</p>
+<p>
+<u>Uwaga1</u>
+Niestety jego działanie nie zawsze jest jednoznaczne, dlatego dużo bezpieczniej jest używać
+selektora typu dla elementu body, chyba że zastosujemy to polecenie w odniesieniu do klasy
+selektorów.
+</p>
+<p>
+<u>Uwaga2</u>
+Jeśli selektor uniwersalny chcemy zastosować do selektora innego niż selektor typu (w
+połączeniu z selektorami: atrybutów, specjalnymi, pseudoelementów lub pseudoklas), to
+gwiazdkę można pominąć.
+</p>
+<p>
+<u>Przykład</u>
+Zdarza się, że zachodzi potrzeba zdefiniowania jakiegoś typu formatowania w ten sposób, aby
+zadziałał on na cały dokument. Bardzo dobrym przykładem takiej sytuacji może być tło, które
+zazwyczaj powinno być identyczne dla całego dokumentu. Odpowiedni styl może przyjąć
+następującą postać:
+        </p></li>
+        <li>
+            <h3>Selektor potomka</h3>
+            <p><b><u>Selektor potomka</b> pozwala nadać atrybuty elementom, które leżą niżej w hierarchii drzewa
+                dokumentu (zawierają się w innych zewnętrznych znacznikach). Dzięki temu możemy
+                zmienić typ formatowania tylko dla określonych elementów, które są podrzędne w stosunku
+                do innych (przodków).</u> Potomek nie musi leżeć bezpośrednio wewnątrz znacznika przodka.
+                Może być zawarty jeszcze w innych znacznikach, które z kolei zawierają się w rodzicu. Nie
+                jest wtedy konieczne podawanie w deklaracji wszystkich rodziców, a jedynie przodka i
+                potomka.
+                Selektor taki jest szczególnie przydatny, dla określenia wyglądu odsyłaczy wewnątrz bloku,
+                ponieważ jeśli nie określimy dla nich tzw. pseudoklas odsyłaczowych, nie odziedziczą one
+                formatowania po przodkach.</p>
+        </li>
+        <li>
+            <h3>Selektor dziecka</h3>
+            <p>Selektor dziecka służy do definiowania elementów, które znajdują się o jeden rząd niżej w
+                hierarchii drzewa dokumentów.</p>
+            <p>
+                rodzic > dziecko {właściwość: wartość}
+                gdzie symbol „>” oznacza bezpośredni związek między elementami.
+            </p>
+        </li>
+        <li>
+            <h3>Selektor braci</h3>
+            <p>brat1 + brat2 { właściwość: wartość }</p>
+            <p><b>Zastosowanie selekora rodzeństwa można przypisać styl elementowi bezpośrednio
+                sąsiadującemu z innymi.</b> By warunek został spełniony, oba selektory muszą mieć wspólnego
+                <u>„rodzica”.</u> </p>
+        </li>
+        <li>
+            <h3>Selektor atrybutu</h3>
+            <p><b>Atrybut</b> oznacza konkretny parametr nadany znacznikowi z poziomu języka (X)HTML.
+                Natomiast <b>"cecha" oraz "wartość"</b> określają atrybuty elementu nadane poprzez style i
+                zostaną opisane w dalszych rozdziałach.
+                Polecenie to może zostać wykorzystane dla elementów, którym z poziomu (X)HTML został
+                nadany określony atrybut (przy czym <u>jego wartość nie ma znaczenia</u>).
+                uwaga
+                W języku XHTML wszystkie atrybuty w selektorach muszą być pisane małymi literami.
+                </p>
+        </li>
+    </ol>
+    
+</body>
+</html>
