@@ -1,0 +1,37 @@
+#pogrubienie_warkusz {
+    font-weight: bold;
+    font-size: 32px;
+    color: #8A61CF;
+}
+
+#pochylona_warkusz {
+    font-style: italic;
+    font-size: 37px;
+    color: #EEC56B;
+}
+
+#index_gorny_warkusz {
+    font-size: 1.2cm;
+    color: #9E931B;
+}
+
+#index_dolny_warkusz {
+    font-size: 1.9cm;
+    color: rgb(20%,97%,89%);
+}
+
+#mono_warkusz {
+    font-family: monospace;
+    font-size: 42px;
+    color: #18E36B;
+}
+
+#powiekszenie_warkusz {
+    font-size: 60px;
+    color:#58439D;
+}
+
+#pomniejszenie_warkusz {
+    font-size: 16px;
+    color: rgb(74%,65%,22%);
+}

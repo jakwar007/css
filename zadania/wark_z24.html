@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/wark_z23.css">
+</head>
+<body>
+    <ol>
+        <li><h2>Jakie standardowo dostępne są czcionki w systemie Windows?</h2>
+            <ul>
+                <li>Times New Roman</li>
+                <li>Arial</li>
+                <li>Courier New</li>
+            </ul>
+        </li>
+        <li><h2>Jakich czcionek dodatkowo dostarcza Internet Explorerem?</h2>
+            <ul>
+                <li>Verdana</li>
+                <li>Tahoma</li>
+                <li>Trebuchet MS</li>
+                <li>Georgia</li>
+            </ul>
+        </li>
+        <li><h2>Wymień rodziny ogólny?</h2>
+            <ul>
+                <li>serif</li>
+                <li>sans-serif</li>
+                <li>monospace</li>
+                <li>cursive</li>
+                <li>fantasy</li>
+            </ul>
+        </li>
+        <li><h2>Kiedy stosujemy rodziny czcionek</h2>
+            <p>
+                <u>body { font-family: Arial, Helvetica, Verdana, sans-serif }</u>
+                Taki sposób jest mocno zalecany, gdyż wtedy nawet jeśli użytkownik nie będzie posiadał<br>
+                żadnej z podanych czcionek, strona zostanie wyświetlona przy użyciu czcionki podobnej do<br>
+                zdefiniowanych, a nie domyślnej, która może zupełnie nie pasować do typografii naszej<br>
+                strony. Dlatego zawsze staraj się na końcu wpisywać rodzinę ogólną, do której należą<br>
+                czcionki, podane w pierwszej kolejności (najczęściej wykorzystuje się rodziny: serif lub sansserif).<br><br>
+                Niestety, ponieważ w takim przypadku to przeglądarka automatycznie dobiera rodzaj<br>
+                czcionki, może się zdarzyć, że wybierze czcionkę, która niepoprawnie zapisuje polskie znaki<br>
+                (tak się właśnie stało w mojej przeglądarce z rodziną fantasy). Chociaż jeśli chodzi o rodziny<br>
+                podstawowe (serif, sans-serif, monospace), wszystko powinno być w porządku.<br>
+            </p>
+        </li>
+        <li><h2>Rodzaje wyrównania tekstu</h2>
+            <ul>
+                <li>Do prawej (kolor żółty)</li>
+                <li>Do lewej (kolor pomarańczowy)</li>
+                <li>Wyśrodkowane (kolor różowy)</li>
+                <li>Wyjustowane (kolor zielony)</li>
+            </ul>
+        </li>
+        <li><h2>Kolor tekstu</h2>
+            <p>
+            Składnia reguły:
+            &nbsp;&nbsp;&nbsp;selektor {color: kolor;}<br>
+            Wyraz selektor ma zastosowanie do wszystkich elementów.<br>
+            Natomiast jako kolor należy podać definicję koloru.<br>
+            Dzięki temu poleceniu można ustalić dowolny kolor tekstu.<br><br>
+            <u>Przykład:</u><br>
+            kolor #c0c0c0; (silver)<br>
+            kolor #800000; (maroon)<br>
+            kolor #ff0000; (red)<br>
+            kolor #800080; (purple)<br>
+            kolor #008000; (green)<br>
+            kolor #ffff00; (yellow)<br>
+            kolor #000080; (navy)<br>
+            </p>
+        </li>
+        <li><h2>Dekoracja tekstu</h2>
+            Tekst można „udekorować” w sposób następujący: <br>
+            <ul>
+                <li>Podkreślić - (underline)</li>
+                <li>Przekreślić - (line-through)</li>
+                <li>Nadkreślić - (overline)</li>
+                <li>Można dodać migotanie tekstu (tylko Netspace/Mozilla/Opera) – (blink)</li>
+            </ul>
+            <br>
+            Składnia reguły: <br>
+             selektor {text-decoration: dekoracja;} <br>
+            Wyraz selektor ma zastosowanie do wszystkich elementów. <br>
+             dekoracja: <br>
+             "none" - bez zmian czyli tekst bez podkreśleń, przekreśleń itp. <br>
+             "underline" - podkreślenie <br>
+             "line-through" - przekreślenie <br>
+             "overline" - nadkreślenie <br>
+             "blink" - migotanie tekstu (tylko Netscape/Mozilla/Opera) <br>
+        </li>
+        <li>
+            <h2>Warianty czcionek</h2>
+            <p>
+                normal - czcionka normalna (podstawowa) <br>
+small-caps - kapitaliki <br><br>
+"kapitaliki", czyli tekst napisany wielkimi literami, lecz czcionką o wielkości małych liter
+            </p>
+        </li>
+        <li>
+            <h2>Pogrubienie czcionek</h2>
+            
+            <ul>
+                <li>normal - czcionka normalna (podstawowa)</li>
+                <li>bold - czcionka pogrubiona</li>
+                <li>100, 200, 300, 400 (odpowiednik "normal"), 500, 600, 700 (odpowiednik "bold"), 800, 900 każdy następny numer wskazuje wagę czcionki przynajmniej tak samo
+                wytłuszczonej jak dla poprzedniej wartości w sekwencji</li>
+            </ul>
+        </li>
+        <li>
+            <h2>Rozmiar czcionek</h2>
+            <ul>
+                <li>xx-small - najmniejsza</li>
+                <li>x-small - mniejsza</li>
+                <li>small - mała</li>
+                <li>medium - średnia</li>
+                <li>large - duża</li>
+                <li>x-large - większa</li>
+                <li>xx-large - największa</li>
+            </ul>
+            <p>Z użyciem różnych jednostek</p>
+            <ul>
+                <li>rozmiar 0.5cm</li>
+                <li>rozmiar 4mm</li>
+                <li>rozmiar 0.25in</li>
+                <li>rozmiar 10pt</li>
+                <li>rozmiar 1pc</li>
+                <li>rozmiar 15px</li>
+                <li>rozmiar 1em</li>
+                <li>rozmiar 2ex</li>
+            </ul>
+        </li>
+        <li>
+            <h2>Transformacja tekstu</h2>
+            <p>Składnia reguły: <br>
+                <u>selektor {text-transform: transformacja;}</u> <br>
+               Wyraz selektor ma zastosowanie do wszystkich elementów. <br><br>
+                <u>transformacja:</u>
+                <ul>
+                <li>"none" - bez zmian</li>
+                <li>"capitalize" - zamiana pierwszych liter wszystkich wyrazów na wielkie</li>
+                <li>"uppercase" - zamiana wszystkich liter na wielkie</li>
+                <li>"lowercase" - zamiana wszystkich liter na małe</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h2>Wcięcia tekstu</h2>
+            <p>Składnia reguły: <br>
+                selektor {text-indent: wcięcie;} <br>
+               Wyraz selektor ma zastosowanie do elementów blokowych.br <br><br>
+                wcięcie: <br>
+                należy podać konkretną wielkość, używając jednostek miary: <br></p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li> wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>centymetry lub milimetry - cm, mm</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li> cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej - %</li>
+                </ul>
+        </li>
+        <li>
+            <h2>Odstęp miedzy wierszami</h2>
+            <p>Składnia reguły: <br>
+                selektor {line-height: odstęp;} <br>
+               Wyraz selektor ma zastosowanie do wszystkich elementów. <br><br>
+                odstęp: <br>
+                należy podać konkretną wielkość, używając jednostek miary: <br></p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej -%</li>
+                    <li> "normal" - przywraca wartość domyślną</li>
+                </ul>
+        </li>
+        <li>
+            <h2>Odstęp między wyrazami</h2>
+            <p>Składnia reguły: <br>
+                selektor {word-spacing: odstęp;} <br>
+               Wyraz selektor ma zastosowanie do wszystkich elementów. <br><br>
+                odstęp: <br>
+                należy podać konkretną wielkość, używając jednostek miary: <br></p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej -%</li>
+                    <li> "normal" - przywraca wartość domyślną</li>
+                </ul>
+        </li>
+        <li>
+            <h2>Odstęp między literami</h2>
+            <p>Składnia reguły: <br>
+                selektor {letter-spacing: odstęp;}<br>
+               Wyraz selektor ma zastosowanie do wszystkich elementów. <br><br>
+                odstęp: <br>
+                należy podać konkretną wielkość, używając jednostek miary: <br></p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej -%</li>
+                    <li> "normal" - przywraca wartość domyślną</li>
+                </ul>
+        </li>
+        <li>
+            <h2>Łączenie właściwości czcionek i tekstu</h2>
+            <p>Prawidłowa kolejność wartości atrybutów:</p>
+                <ol>
+                    <li>font-style</li>
+                    <li>font-variant</li>
+                    <li>font-weight</li>
+                    <li>font-size (po tym ukośnik „/”; bezpośrednio przed „line-height”)</li>
+                    <li>line-height</li>
+                    <li>font-family</li>
+                </ol>
+                <p>
+                Składnia reguły: <br>
+                 selektor {font: wartości atrybutów;} <br>
+                Wyraz selektor ma zastosowanie do wszystkich elementów. <br>
+                Jako wartości atrybutów wpisać należy zgodnie z podaną poniżej kolejnością, oddzielając <br>
+                spacjami, konkretne wartości, które opisują poszczególne atrybuty czcionek i tekstu. <br>
+                Można niektóre pominąć.</p> 
+                 wartości atrybutów: <br>
+                 <ul>
+                    <li>font-style</li>
+                    <li>font-variant</li>
+                    <li>font-weight</li>
+                    <li>font-size</li>
+                    <li>line-height</li>
+                    <li>font-family</li>
+                 </ul>
+                <p>
+                Dzięki temu poleceniu można w jednym miejscu zebrać atrybuty dotyczące czcionek i
+                tekstu. Pomiędzy font-size, a line-height należy wstawić ukośnik (bezpośrednio przed
+                line-height).</p>
+        </li>
+    </ol>
+</body>
+<!-- Jakub Warkusz -->
+</html>
