@@ -77,7 +77,15 @@
   -moz-animation: rotating 4s linear infinite;
   -ms-animation: rotating 4s linear infinite;
   -o-animation: rotating 4s linear infinite;
-  animation: rotating 42s linear infinite;
+  animation: rotating 4s linear infinite;
+}
+
+.rotatingSpeed {
+  -webkit-animation: rotating 0.5s linear infinite;
+  -moz-animation: rotating 0.5s linear infinite;
+  -ms-animation: rotating 0.5s linear infinite;
+  -o-animation: rotating 0.5s linear infinite;
+  animation: rotating 0.5s linear infinite;
 }
 
 .rainbow {
@@ -147,7 +155,12 @@ iframe {
                 <li><a href="zadania/wark_z22.html" target="obszar_glowny">Zadanie 22</a></li>
                 <li><a href="zadania/wark_z23.html" target="obszar_glowny">Zadanie 23</a></li>
                 <li><a href="zadania/wark_z24.html" target="obszar_glowny">Zadanie 24</a></li>
-		<li><a href="zadania/wark_z25.html" target="obszar_glowny">Zadanie 25</a></li>
+		            <li><a href="zadania/wark_z25.html" target="obszar_glowny">Zadanie 25</a></li>
+                <li><a href="zadania/wark_z32.html" target="obszar_glowny">Zadanie 32</a></li>
+                <li><a href="zadania/wark_z33.html" target="obszar_glowny">Zadanie 33</a></li>
+                <li><a href="zadania/wark_z34.html" target="obszar_glowny">Zadanie 34</a></li>
+                <li><a href="zadania/wark_z35.html" target="obszar_glowny">Zadanie 35</a></li>
+                <li><a href="zadania/wark_z36.html" target="obszar_glowny">Zadanie 36</a></li>
             </ul>
         </td>
         <td class="center" align="center"><iframe  id="main" width=650 height=420 name="obszar_glowny"></iframe>
@@ -169,6 +182,9 @@ iframe {
                 <li><a href="zadania/kod_z20_wark.html" target="obszar_glowny">Zadanie 20 - kod</a></li>
                 <li><a href="zadania/kod_z22_wark.html" target="obszar_glowny">Zadanie 22 - kod</a></li>
                 <li><a href="zadania/kod_z23_wark.html" target="obszar_glowny">Zadanie 23 - kod</a></li>
+                <li><a href="zadania/kod_z33_wark.html" target="obszar_glowny">Zadanie 33 - kod</a></li>
+                <li><a href="zadania/kod_z34_wark.html" target="obszar_glowny">Zadanie 34 - kod</a></li>
+                <li><a href="zadania/kod_z36_wark.html" target="obszar_glowny">Zadanie 36 - kod</a></li>
             </ul>
         </td>
     </tr>
@@ -182,6 +198,8 @@ iframe {
     let body = document.body
     if (!rotate.classList.contains("rotating")) {
       rotate.classList += 'rotating'
+    } else {
+      rotate.classList = 'rotatingSpeed'
     }
     if (!body.classList.contains("rainbow")) {
       body.classList += 'rainbow'
