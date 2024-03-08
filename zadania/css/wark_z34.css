@@ -1,0 +1,45 @@
+div.parent-first {
+    display: flex;
+    justify-content: right;
+    align-items:right;
+}
+div.parent-drugi {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.parent-trzeci {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+div.pierwszy {
+    width: 300pt;
+    background-color: lightpink;
+    height: 2cm;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    border-top: 1px lime groove;
+    border-bottom: 1px yellow groove;
+    border-left: 1px blue groove;
+    border-right: 1px gray groove;
+    margin: 10px;
+}
+div.drugi {
+    width: 400pt;
+    height: 3cm;
+    background-color: pink;
+    border: 1px #000000 dashed;
+    padding: 12px;
+}
+div.trzeci {
+    width: 400pt;
+    height: 4cm;
+    background-color: #eec0c8;
+    padding: 16px;
+    border: 1px maroon double;
+    margin-top: 10px;
+}
+h1 {
+    font-size: 13px;
+}
