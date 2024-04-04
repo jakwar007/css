@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h5>HTML</h5>
+    <textarea readonly disabled style="width:900px;height:1000px;">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="css/wark_z65.css">
+    </head>
+    <body>
+        <div id="pierwszy_warkusz">
+            <p>
+                pierwszy akapit / pierwszy div -> Warkusz #pierwszy_warkusz
+            </p>
+            <p>
+                drugi akapit / pierwszy div <br>
+                pierwszy akapit -> {font-size: 9mm; font-style:italic; }, numer parzysty w dzienniku <br>
+                pozostałe akapity -> font-size: 10pt;, numer parzysty w dzienniku<br>
+                szerokosc bloku -> 700 + 26 * 4 = 804pt <br>
+                pierwszy div -> różowy
+            </p>
+            <p>
+                trzeci akapit / pierwszy div <br>
+                pierwszy div -> border fioletowy  <br>
+                pierwszy div -> obramowanie 7px, solid <br>
+                pierwszy div -> r1 = 7 + 5 = 12px <br>
+            </p>
+        </div>
+
+        <div id="drugi_warkusz">
+            <p>
+                pierwszy akapit / drugi div -> Jakub #drugi_warkusz
+            </p>
+            <p>
+                drugi akapit / drugi div <br>
+                pierwszy akapit -> {font-size: 9mm; font-style:italic; }, numer parzysty w dzienniku <br>
+                pozostałe akapity -> font-size: 10pt;, numer parzysty w dzienniku<br>
+                szerokosc bloku -> 900 + 26 * 4 = 1004pt <br>
+                pierwszy div -> jasnozielony
+            </p>
+            <p>
+                trzeci akapit / drugi  div <br>
+                drugi  div -> border czarny  <br>
+                drugi  div -> obramowanie 3px, solid <br>
+                drugi  div -> r1 = 7 + 7 = 14px <br>
+            </p>
+        </div>
+
+        <div id="trzeci_warkusz">
+            <p>
+                pierwszy akapit / trzeci div -> 1P #drugi_warkusz
+            </p>
+            <p>
+                drugi akapit / trzeci div <br>
+                pierwszy akapit -> {font-size: 9mm; font-style:italic; }, numer parzysty w dzienniku <br>
+                pozostałe akapity -> font-size: 10pt;, numer parzysty w dzienniku<br>
+                szerokosc bloku -> 1100 + 26 * 4 = 1214pt <br>
+                trzeci div -> jasna zielen
+            </p>
+            <p>
+                trzeci akapit / trzeci  div <br>
+                trzeci  div -> border granatowy <br>
+                trzeci  div -> obramowanie 5px, solid <br>
+                trzeci  div -> r1 = 7 + 7 = 14px <br>
+            </p>
+        </div>
+    </body>
+</html>
+    </textarea>
+    <h5>CSS</h5>
+    <textarea readonly disabled style="width:900px;height:1000px;">
+
+p:not(:first-child) {
+    font-size: 10pt;
+}
+
+p:first-child {
+    font-size: 9mm;
+    font-style: italic;
+}
+
+div {
+    margin: 10px;
+}
+
+div#pierwszy_warkusz {
+    width: 804pt;
+    background-color: pink;
+    border-radius: 12px;
+    border: 7px solid purple;
+    padding: 10px;
+}
+
+div#drugi_warkusz {
+    width: 1004pt;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgreen;
+    border-radius: 14px;
+    border: 3px solid #000000;
+    padding: 10px;
+}
+
+div#trzeci_warkusz {
+    width: 1214pt;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+    border-radius: 14px;
+    border: 5px solid darkblue;
+}
+    </textarea>
+</body>
+</html>
