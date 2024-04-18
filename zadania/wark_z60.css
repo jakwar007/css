@@ -1,0 +1,17 @@
+div {
+    width: 626px;
+    background-color: green;
+    font-size: 20mm;
+}
+
+#blok_warkusz_1:hover {
+    background-color: silver;
+}
+
+#blok_warkusz_2 {
+    background-color: yellow;
+}
+
+#blok_warkusz_3 {
+    background-color: turquoise
+}

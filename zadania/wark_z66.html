@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <ul>
+            <li>
+                <h1>
+                    :first-line
+                </h1>
+                <p>
+                    obejmuje formatowaniem całą pierwszą linię. 
+                </p>
+                <textarea cols="40" rows="15">
+p 
+{ 
+    color:navy; 
+    font-size:12pt; 
+} 
+
+p:first-line 
+{ 
+    color:red; 
+    font-size:20pt; 
+    font-weight:bold; 
+} 
+                </textarea>
+            </li>
+            <li>
+                <h1>::after i ::before</h1>
+                <p>
+                    Oba elementy służą do umieszczania tekstu przed i za 
+formatowanym elementem strony. Poniżej zamieszczam odpowiedni przykład.
+                </p>
+                <textarea cols="125" rows="30">
+p:before     
+{     
+    content:"TO SĄ ĆWICZENIA";     
+    font-size:15pt;     
+    font-style:italic;        
+    font-weight:bold;     
+}  
+p:after     
+{     
+    content:"AUTOR Król Lew";     
+    font-size:15pt;     
+    font-style:italic;     
+    font-weight:bold;     
+} 
+                </textarea>
+            </li>
+            <li>
+                <h1>
+                    :first-letter 
+                </h1>
+                <p>
+                    formatowanie pierwszej litery w bloku 
+                    tekstu.
+                </p>
+                <textarea name="" id="" cols="50" rows="15">
+p 
+{ 
+    color:navy; 
+    font-size:30pt; 
+} 
+
+p:first-letter 
+{ 
+    color:red; 
+    font-size:100pt; 
+}
+                </textarea>
+            </li>
+        </ul>
+    </body>
+</html>

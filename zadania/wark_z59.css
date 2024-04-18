@@ -1,0 +1,32 @@
+a {
+    font-size: 18pt;
+    /*
+        usuwa dekorację tekstu z linku
+    */
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: red;
+    /*
+        ustawia dekorację tekstu na podkreślenie
+    */
+    text-decoration: underline;
+}
+
+div {
+    font-size: 2cm;
+    color: red;
+}
+
+/*
+    Jakub warkusz
+*/
