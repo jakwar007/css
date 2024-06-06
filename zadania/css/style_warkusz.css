@@ -1,0 +1,132 @@
+html, body {
+    background-color: #dadada;
+    color: #000000;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+div#strona {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffebcd;
+}
+
+div#naglowek {
+    height: 100px;
+    padding: 10px;
+    background-color: #deb887;
+    color: #ffff;
+}
+
+div#menu {
+    width: 150px;
+    float: left;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #d2b48c;
+    height: 557px;
+}
+
+div#menu ul {
+    list-style-type: none;
+}
+
+div#menu ul li {
+    background-color: #f4a460;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: -30px;
+    margin-top: 4px;
+}
+
+div#menu ul li:hover {
+    background-color: #cd853f;
+}
+
+div#zawartosc {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #d2691e;
+    height: 537px;
+}
+
+div#stopka {
+    clear: both;
+    padding: 10px;
+    background-color: #a0522d;
+    color: #ffff;
+}
+
+div#menu ul li {
+    background-color: #f4a460;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: -30px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+div#menu ul li:hover {
+    background-color: #cd853f;
+}
+
+/* <!-- Dodaj do strony tabelę zdefiniowana w CSS (z łączeniem komórek, obramowaniem
+zewnętrzne i wewnętrzne  ciekawe zaproponowane przez ciebie, kolorowanie komórek)
+Tabela będzie zawierała wytłumaczenie definicji CSS (łącznie z definicjami tabeli).
+Strzałka ze znaków specjalnych HTML
+Opisz w tabeli style (oprócz html, body, który ma być w tabeli i jest zrobiony):
+margin,
+padding,
+text-decoration,
+font-size,
+border. -->
+    <table>
+    <tr>
+    <td colspan="2">Styl &rarr; definicja</td>
+    </tr>
+    <tr>
+    <td>margin</td>
+    <td>odstęp zewnętrzny</td>
+    </tr>
+    <tr>
+    <td>padding</td>
+    <td>odstęp wewnętrzny</td>
+    </tr>
+    <tr>
+    <td>text-decoration</td>
+    <td>dekoracja tekstu</td>
+    </tr>
+    <tr>
+    <td>font-size</td>
+    <td>rozmiar czcionki</td>
+    </tr>
+    <tr>
+    <td>border</td>
+    <td>obramowanie</td>
+    </tr>
+    </table> */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+    border: 2px solid #000000;
+}
+
+td {
+    border: 1px solid #000000;
+    background-color: #f4a460;
+    padding: 10px;
+}
+
+td[colspan="2"] {
+    text-align: center;
+    background-color: #deb887;
+    color: #ffff;
+}
+
+/* <!-- Dodaj do strony formularz zdefiniowany w CSS (z wykorzystaniem różnych typów
